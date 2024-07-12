@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Website</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-burger"></i>FastFoodStore</a>
+
+        <nav class="navbar">
+            <a href="#home">Trang chủ</a>
+            <a href="#features">Đặc điểm</a>
+            <a href="#food">Đồ ăn</a>
+            <a href="#drinks">Nước uống</a>
+            <a href="#review">Phản hồi</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="cart">
+            <h2 class="cart-title">Giỏ hàng</h2>
+            <div class="cart-content">
+                
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">0 VND</div>
+            </div>
+
+            <button type="button" class="btn-buy">Đặt ngay</button>
+            <i class="fa-solid fa-x" id="close-cart"></i>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Đăng nhập</h3>
+            <input type="email" placeholder="Nhập email" class="box">
+            <input type="password" placeholder="Nhập mật khẩu" class="box">
+            <p>Quên mật khẩu <a href="#">Ấn vào đây</a></p>
+            <p>Không có tài khoản <a href="#">Tạo ngay</a></p>
+            <input type="submit" value="Đăng nhập" class="btn">
+        </form>
+        
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <a href="#food" class="btn-content">Mua ngay</a>
+        </div>
+
+    </section>
+
+    <section class="features" id="features">
+        <h1 class="heading"><span> Đặc điểm </span> </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/anh_2.jpg" alt="">
+                <h3>Cuốn hút</h3>
+                <p>Hương vị tuyệt vời của lớp vỏ giòn tan, quyện với nhân ngọt ngào và béo ngậy, sẽ khiến bạn không thể cưỡng lại ngay từ miếng đầu tiên.</p>
+                <p class="btn-features">Đọc thêm</p>
+            </div>
+
+            <div class="box">
+                <img src="image/anh_3.jpg" alt="">
+                <h3>Giao hàng nhanh</h3>
+                <p>Dịch vụ giao hàng siêu tốc, đảm bảo món ăn đến tay bạn vẫn còn nóng hổi và tươi ngon như vừa mới ra lò.</p>
+                <p class="btn-features">Đọc thêm</p>
+            </div>
+
+            <div class="box">
+                <img src="image/anh_4.jpg" alt="">
+                <h3>Thân thiện</h3>
+                <p>Giao diện web thân thiện với người dùng, thiết kế tinh tế và dễ điều hướng, mang lại trải nghiệm mượt mà và tiện lợi.</p>
+                <p class="btn-features">Đọc thêm</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="food" id="food">
+        <h1 class="heading"><span>Đồ ăn</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="price"> 45000 VND</span>
+                <img src="image/anh_5.jpg" alt="" class="product-img">
+                <h3 class="products-title">Gà rán</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 100000 VND</span>
+                <img src="image/anh_6.jpg" alt="" class="product-img">
+                <h3 class="products-title">Pizza</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+            
+            <div class="box">
+                <span class="price"> 30000 VND</span>
+                <img src="image/anh_8.jpg" alt="" class="product-img">
+                <h3 class="products-title">Sandwich</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 75000 VND</span>
+                <img src="image/anh_9.jpg" alt="" class="product-img">
+                <h3 class="products-title">Hamburger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 45000 VND</span>
+                <img src="image/anh_10.jpg" alt="" class="product-img">
+                <h3 class="products-title">Bánh tacos</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 20000 VND</span>
+                <img src="image/anh_11.jpg" alt="" class="product-img">
+                <h3 class="products-title">Xúc xích</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 75000 VND</span>
+                <img src="image/anh_12.jpg" alt="" class="product-img">
+                <h3 class="products-title">Mỳ ý</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 40000 VND</span>
+                <img src="image/anh_13.jpg" alt="" class="product-img">
+                <h3 class="products-title">Salad</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="drinks" id="drinks">
+        <h1 class="heading"><span>Nước uống</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="price"> 15000 VND</span>
+                <img src="image/anh_14.jpg" alt="" class="product-img">
+                <h3 class="products-title">Coca Cola</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 15000 VND</span>
+                <img src="image/anh_15.jpg" alt="" class="product-img">
+                <h3 class="products-title">Pepsi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 15000 VND</span>
+                <img src="image/anh_16.jpg" alt="" class="product-img">
+                <h3 class="products-title">7Up</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 15000 VND</span>
+                <img src="image/anh_17.jpg" alt="" class="product-img">
+                <h3 class="products-title">Fanta</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 25000 VND</span>
+                <img src="image/anh_18.png" alt="" class="product-img">
+                <h3 class="products-title">Trà đào</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 25000 VND</span>
+                <img src="image/anh_19.png" alt="" class="product-img">
+                <h3 class="products-title">Trà chanh</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 25000 VND</span>
+                <img src="image/anh_20.png" alt="" class="product-img">
+                <h3 class="products-title">Trà dâu</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+
+            <div class="box">
+                <span class="price"> 25000 VND</span>
+                <img src="image/anh_21.png" alt="" class="product-img">
+                <h3 class="products-title">Trà hoa quả</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="btn">Đặt ngay</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h1 class="heading"><span>Phản hồi</span></h1>
+        <div class=" swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/anh_22.jpg" alt="">
+                    <p>Cửa hàng sạch sẽ, đồ ăn ngon, phục vụ nhanh chóng. Rất hài lòng với trải nghiệm ở đây. Sẽ quay lại!</p>
+                    <h3>Nguyen Van A</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/anh_23.jpg" alt="">
+                    <p>Đồ ăn tươi, giá cả hợp lý, nhân viên thân thiện. Không gian thoải mái, phù hợp cho gia đình và bạn bè.</p>
+                    <h3>Nguyen Van B</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/anh_24.jpg" alt="">
+                    <p>Thức ăn nhanh, nóng hổi, đa dạng. Nhân viên vui vẻ, phục vụ chu đáo. Sẽ giới thiệu cho bạn bè.</p>
+                    <h3>Nguyen Van C</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/anh_25.jpg" alt="">
+                    <p>Thức ăn ngon, giá rẻ, phục vụ nhanh chóng. Rất thích không gian quán, sạch sẽ và thoáng mát.</p>
+                    <h3>Nguyen Van D</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/anh_26.jpg" alt="">
+                    <p>Cửa hàng đẹp, thức ăn đa dạng và ngon. Nhân viên nhiệt tình, phục vụ tận tâm. Rất đáng để ghé qua!</p>
+                    <h3>Nguyen Van E</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fa-solid fa-burger"></i>FastFoodStore </h3>
+                <p>Nhanh chóng, tiện lợi, ngon miệng, đa dạng, giá rẻ, phổ biến</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3> Contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> 0912345678 </a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> 0912388888 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> phungyn@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> HaNoi, VietNam </a>
+
+            </div>
+
+            <div class="box">
+                <h3> Quick links</h3>
+                <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> Trang chủ </a>
+                <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> Đặc điểm </a>
+                <a href="#food" class="links"> <i class="fas fa-arrow-right"></i> Đồ ăn </a>
+                <a href="#drinks" class="links"> <i class="fas fa-arrow-right"></i> Nước uống </a>
+                <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> Phản hồi </a>
+            </div>
+
+            <div class="box">
+                <h3> Newsletter</h3>
+                <p>Đăng ký để cập nhật mới nhất</p>
+                <input type="email" placeholder="Email của bạn" class="email">
+                <input type="submit" value="Đăng ký" class="btn">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
